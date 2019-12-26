@@ -1,0 +1,1 @@
+# scrapy-recruitment-info
