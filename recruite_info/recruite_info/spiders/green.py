@@ -13,19 +13,23 @@ class GreenSpider(CrawlSpider):
     name = 'green'
     allowed_domains = ['green-japan.com']
     base_url = 'https://green-japan.com'
-    start_urls = ['https://green-japan.com/search_key/01?key=2st6fzxsag8ckiplpi18&page=3']
-    # start_urls = ['https://green-japan.com/search_key/01?key=2st6fzxsag8ckiplpi18&page={0}'.format(str(i)) for i in range(100)]
+    start_urls = ['https://green-japan.com/search_key/01?key=2st6fzxsag8ckiplpi18&page=1']
+    #start_urls = ['https://green-japan.com/search_key/01?key=2st6fzxsag8ckiplpi18&page={0}'.format(str(i)) for i in range(100)]
 
     allow_list = [r'/job/[0-9]+']# 'hoge.com/product'以下を正規表現でマッチング
-    restrict_list = ['//*[@id="srchRgt"]/div[3]/div[1]/a']# スパイダーがスナイポするHTML要素
+    # restrict_list = ['//*[@id="srch-rslt"]']# スパイダーがスナイポするHTML要素
 
     rules = (
         Rule(LinkExtractor(
             allow=allow_list,
-            # restrict_xpaths=restrict_list,
+      #      restrict_xpaths=restrict_list,
             unique=True,
         ), callback='parse_item', follow=True),
     )
+
+    # def start_requests(self):
+    #     for i in range(1, 3):
+    #         yield scrapy.Request('https://green-japan.com/search_key/01?key=2st6fzxsag8ckiplpi18&page=' + str(i))
 
     def parse_item(self, response):
         green = Green()
