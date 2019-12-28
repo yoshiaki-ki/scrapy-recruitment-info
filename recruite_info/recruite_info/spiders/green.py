@@ -37,9 +37,13 @@ class GreenSpider(CrawlSpider):
         green["job_title"] = response.css('h2::text').extract_first().strip()
         green["job_url"] = response.url
         try:
-            green["salary"] = response.css('ul.job-offer-meta-tags>li::text')[0].get().strip()
+            salary = response.css('ul.job-offer-meta-tags>li::text')[0].get().strip()
+            min_max_salary = re.split('[~〜]', salary)
+            green["min_salary"] = min_max_salary[0]
+            green["max_salary"] = min_max_salary[1]
         except:
-            green["salary"] = ""
+            green["min_salary"] = ""
+            green["max_salary"] = ""
         try:
             green["locate"] = response.css('ul.job-offer-meta-tags>li::text')[1].get().strip()
         except:
@@ -70,40 +74,3 @@ class GreenSpider(CrawlSpider):
             green["small_occupation"] = ""
 
         yield green
-
-
-    # def start_requests(self):
-    #     for i in range(19, 100):
-    #         yield scrapy.Request('https://green-japan.com/search_key/01?key=2st6fzxsag8ckiplpi18&page=' + str(i))
-    #
-    # def parse(self, response):
-    #     """
-    #     レスポンスに対するパース処理
-    #     """
-    #     # response.css で scrapy デフォルトの css セレクタを利用できる
-    #     for job in response.css('.card-info__wrapper'):
-    #         if not job:
-    #             break
-    #         # items に定義した Post のオブジェクトを生成して次の処理へ渡す
-    #         green = Green()
-    #         green["job_tag"] = job.css('div.job-offer-icon::text').extract_first().strip()
-    #         green["job_title"] = job.css('h3.card-info__heading-area__title::text').extract_first().strip()
-    #         green["job_url"] = job.css('div.card-info__wrapper a::attr(href)').extract_first().strip()
-    #         try:
-    #             green["salary"] = job.css('ul.job-offer-meta-tags>li::text')[1].extract().strip()
-    #         except:
-    #             green["salary"] = ""
-    #         try:
-    #             green["company"] = job.css('h3.card-info__detail-area__box__title::text').extract_first().strip()
-    #         except:
-    #             green["company"] = ""
-    #         try:
-    #             green["big_occupation"] = job.css('ul.tag-heading-box--gray>li::text')[1].extract()
-    #         except:
-    #             green["big_occupation"] = ""
-    #         try:
-    #             green["small_occupation"] = job.css('ul.tag-heading-box--gray>li::text')[3].extract()
-    #         except:
-    #             green["small_occupation"] = ""
-    #
-    #         yield green

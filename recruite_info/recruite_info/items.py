@@ -12,10 +12,15 @@ class Green(scrapy.Item):
     job_tag = scrapy.Field()
     job_title = scrapy.Field()
     job_url = scrapy.Field()
-    salary = scrapy.Field()
+    max_salary = scrapy.Field()
+    min_salary = scrapy.Field()
     locate = scrapy.Field()
     language = scrapy.Field()
     company = scrapy.Field()
     company_url = scrapy.Field()
     big_occupation = scrapy.Field()
     small_occupation = scrapy.Field()
+
+
+class GreenCompanyInfo(scrapy.Item):
+    pass
