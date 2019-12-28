@@ -74,3 +74,4 @@ class GreenSpider(CrawlSpider):
             green["small_occupation"] = ""
 
         yield green
+

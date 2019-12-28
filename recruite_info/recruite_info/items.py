@@ -23,4 +23,18 @@ class Green(scrapy.Item):
 
 
 class GreenCompanyInfo(scrapy.Item):
-    pass
+    company = scrapy.Field()
+    company_url = scrapy.Field()
+    big_industry = scrapy.Field()
+    small_industry = scrapy.Field()
+    feature = scrapy.Field()
+    fund = scrapy.Field()
+    established_at = scrapy.Field()
+    CEO = scrapy.Field()
+    business_description = scrapy.Field()
+    IPO = scrapy.Field()
+    shareholder = scrapy.Field()
+    main_client = scrapy.Field()
+    num_of_employees = scrapy.Field()
+    avg_age = scrapy.Field()
+    address = scrapy.Field()
