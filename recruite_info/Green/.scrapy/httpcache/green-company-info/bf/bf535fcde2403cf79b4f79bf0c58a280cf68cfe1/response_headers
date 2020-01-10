@@ -1,0 +1,15 @@
+Date: Thu, 09 Jan 2020 14:30:33 GMT
+Content-Type: text/html; charset=utf-8
+Server: nginx
+Vary: Accept-Encoding
+Status: 200 OK
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Etag: W/"e6a0493f26b9d53036614aa6a0c3c6da"
+Cache-Control: max-age=0, private, must-revalidate
+Set-Cookie: last_favorites_read_at=2020-01-09+23%3A30%3A33+%2B0900; path=/
+Set-Cookie: _session_id=385954ebb946a1c17ae1125ccbb73fd4; path=/; secure; HttpOnly
+X-Request-Id: cc94e0d1-2ce8-400a-9761-623e999a8bb5
+X-Runtime: 0.218591
+Content-Encoding: gzip

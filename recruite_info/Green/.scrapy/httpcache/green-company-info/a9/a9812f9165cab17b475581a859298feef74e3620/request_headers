@@ -1,0 +1,5 @@
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en
+User-Agent: Scrapy/1.8.0 (+https://scrapy.org)
+Accept-Encoding: gzip,deflate
+Cookie: last_favorites_read_at=2019-12-28+13%3A15%3A37+%2B0900; _session_id=9c66896e69e0c91b90cba24254737a16

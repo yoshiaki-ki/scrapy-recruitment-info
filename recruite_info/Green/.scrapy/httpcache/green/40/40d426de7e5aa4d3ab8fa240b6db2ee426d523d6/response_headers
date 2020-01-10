@@ -1,0 +1,14 @@
+Date: Tue, 07 Jan 2020 12:34:01 GMT
+Content-Type: text/html; charset=utf-8
+Server: nginx
+Vary: Accept-Encoding
+Status: 200 OK
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Etag: W/"92f7be0a4161a9ba7032c42264716cd9"
+Cache-Control: max-age=0, private, must-revalidate
+Set-Cookie: job_offers=94591%2691362%263231%2652900%2692756%2694935; path=/; expires=Fri, 07 Feb 2020 12:34:01 -0000
+X-Request-Id: 706bb60c-9a14-4e30-99b5-3ce8986f14f9
+X-Runtime: 0.325755
+Content-Encoding: gzip

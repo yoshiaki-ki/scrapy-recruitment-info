@@ -1,0 +1,6 @@
+Referer: https://www.green-japan.com/search/01?page=50
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en
+User-Agent: Scrapy/1.8.0 (+https://scrapy.org)
+Accept-Encoding: gzip,deflate
+Cookie: last_favorites_read_at=2020-01-07+21%3A10%3A58+%2B0900; search=null; _session_id=bd3d6b697d1ff88c4791654a8c64786e

@@ -1,0 +1,6 @@
+Referer: https://www.green-japan.com/search/01?page=80
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en
+User-Agent: Scrapy/1.8.0 (+https://scrapy.org)
+Accept-Encoding: gzip,deflate
+Cookie: last_favorites_read_at=2020-01-07+21%3A12%3A29+%2B0900; search=null; _session_id=9acc4c0495a20a856351d3ddfcfa1fca; job_offers=87129%2671029%2671801%2678331%2691681%2678039

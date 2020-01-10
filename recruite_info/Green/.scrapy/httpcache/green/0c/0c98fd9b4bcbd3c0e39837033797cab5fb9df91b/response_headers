@@ -1,0 +1,14 @@
+Date: Wed, 08 Jan 2020 09:45:48 GMT
+Content-Type: text/html; charset=utf-8
+Server: nginx
+Vary: Accept-Encoding
+Status: 200 OK
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Etag: W/"2dd818b4dca29d83911e5d918fbc2f4b"
+Cache-Control: max-age=0, private, must-revalidate
+Set-Cookie: search=null; path=/; expires=Sat, 08 Feb 2020 09:45:47 -0000
+X-Request-Id: 1efe4e90-1a31-48c3-910a-afe4118b9eb6
+X-Runtime: 0.820821
+Content-Encoding: gzip
